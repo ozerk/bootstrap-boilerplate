@@ -1,1 +1,1 @@
-alert('aasdads'):
+console.log('I am Loaded!!')

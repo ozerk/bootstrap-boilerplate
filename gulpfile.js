@@ -28,7 +28,7 @@ function watchFiles(){
 
 function buildCss(){
     return src('src/assets/scss/*.scss')
-    .pipe(gulpSass({includePaths:['node_modules/bootstrap/scss/'],outputStyle:'compressed'}))
+    .pipe(gulpSass({includePaths:['node_modules/bootstrap/scss/','node_modules/font-awesome/scss'],outputStyle:'compressed'}))
     .pipe(dest('src/css'))
     .pipe(browserSync.reload({stream:true}));
 }
